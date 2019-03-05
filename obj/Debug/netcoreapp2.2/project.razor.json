@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/practice-iterating-planets.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
