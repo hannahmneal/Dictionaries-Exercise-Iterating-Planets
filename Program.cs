@@ -18,13 +18,13 @@ namespace practice_iterating_planets
              */
 
             List<Dictionary<string, string>> probes = new List<Dictionary<string, string>>();
-                probes.Add(new Dictionary<string, string>() { {"Mercury", "Mariner 10"} });
-                probes.Add(new Dictionary<string, string>() { {"Venus", "Mariner 1"} });
-                probes.Add(new Dictionary<string, string>() { {"Mars", "Mariner 3"} });
-                probes.Add(new Dictionary<string, string>() { {"Jupiter", "Pioneer 10"} });
-                probes.Add(new Dictionary<string, string>() { {"Saturn", "Cassini"} });
-                probes.Add(new Dictionary<string, string>() { {"Uranus", "Voyager 2"} });
-                probes.Add(new Dictionary<string, string>() { {"Neptune", "Voyager 2"} });
+            probes.Add(new Dictionary<string, string>() { { "Mercury", "Mariner 10" } });
+            probes.Add(new Dictionary<string, string>() { { "Venus", "Mariner 1" } });
+            probes.Add(new Dictionary<string, string>() { { "Mars", "Mariner 3" } });
+            probes.Add(new Dictionary<string, string>() { { "Jupiter", "Pioneer 10" } });
+            probes.Add(new Dictionary<string, string>() { { "Saturn", "Cassini" } });
+            probes.Add(new Dictionary<string, string>() { { "Uranus", "Voyager 2" } });
+            probes.Add(new Dictionary<string, string>() { { "Neptune", "Voyager 2" } });
             /*
                3. Iterate over planetList, and inside that loop, iterate over the list of dictionaries. Write to the console, for each planet, which satellites have visited which planet.
              */
@@ -36,9 +36,9 @@ namespace practice_iterating_planets
                     [0]: "Mercury"
                     [1]: "Venus" ........
              */
-            Console.WriteLine($"Iteration of each planet in planetList: {planet}");
 
             {
+                // Console.WriteLine($"Iteration of each planet in planetList: {planet}");
                 List<string> matchingProbes = new List<string>();
 
                 foreach (Dictionary<string, string> probe in probes) // iterate probes
@@ -55,41 +55,47 @@ namespace practice_iterating_planets
                         [1]: {[Venus, Mariner 1]} ......
                  */
 
-
                 {
+                    foreach (KeyValuePair<string, string> probeItem in probe)
+                    {
 
-                    foreach (KeyValuePair<string, string> probeItem in probe) {
+                        // Console.WriteLine($"Iteration of each probeItem in probe: {probeItem}");
+                        /*
+                            If this WriteLine runs before the if statement, each planet name and probe name is displayed 8 times to the console.
+                         */
+                        // string planetName = probeItem.Key;
+                        // Console.WriteLine($"planetName (probeItem.Key): {planetName}");
 
-                    Console.WriteLine($"Iteration of each probeItem in probe: {probeItem}");
-                    /*
-                        If this WriteLine runs before the if statement, each planet name and probe name is displayed 8 times to the console.
-                     */
-                    string planetName = probeItem.Key;
-                    Console.WriteLine($"planetName (probeItem.Key): {planetName}");
+                        /*
+                            Does the current Dictionary contain the key of
+                            the current planet? Investigate the ContainsKey()
+                            method on a Dictionary.
 
-                    /*
-                        Does the current Dictionary contain the key of
-                        the current planet? Investigate the ContainsKey()
-                        method on a Dictionary.
+                            If so, add the current spacecraft to `matchingProbes`.
+                        */
 
-                        If so, add the current spacecraft to `matchingProbes`.
-                    */
-
+                        if (probe.ContainsKey(planet))
+                        {
+                            matchingProbes.Add(probe[planet]);
+                            // String.Join(",", matchingProbes);
+                            Console.WriteLine($"{planet}, {String.Join(",", matchingProbes)}");
+                        }
+                        //     string planet = String.Join(",", matchingProbes);
+                        // Console.WriteLine($"probe[probeItem.Key]: {probe[probeItem.Key]}");
+                        // Console.WriteLine($"probe[probeItem.Key]: {planet}");
                     }
                 }
-
-                    Console.WriteLine(matchingProbes);
-                   }
-
-                /*
-                    Use String.Join(",", matchingProbes) as part of the
-                    solution to get the output below. It's the C# way of
-                    writing `array.join(",")` in JavaScript.
-                */
-
-
-                // Console.WriteLine($"{}: {}");
             }
-
         }
+
+        /*
+            Use String.Join(",", matchingProbes) as part of the
+            solution to get the output below. It's the C# way of
+            writing `array.join(",")` in JavaScript.
+        */
+
+
+        // Console.WriteLine($"{}: {}");
     }
+
+}
