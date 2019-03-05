@@ -1,0 +1,11 @@
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/bin/Debug/netcoreapp2.2/practice-iterating-planets.deps.json
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/bin/Debug/netcoreapp2.2/practice-iterating-planets.runtimeconfig.json
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/bin/Debug/netcoreapp2.2/practice-iterating-planets.runtimeconfig.dev.json
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/bin/Debug/netcoreapp2.2/practice-iterating-planets.dll
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/bin/Debug/netcoreapp2.2/practice-iterating-planets.pdb
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/obj/Debug/netcoreapp2.2/practice-iterating-planets.csprojAssemblyReference.cache
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/obj/Debug/netcoreapp2.2/practice-iterating-planets.csproj.CoreCompileInputs.cache
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/obj/Debug/netcoreapp2.2/practice-iterating-planets.AssemblyInfoInputs.cache
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/obj/Debug/netcoreapp2.2/practice-iterating-planets.AssemblyInfo.cs
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/obj/Debug/netcoreapp2.2/practice-iterating-planets.dll
+/Users/hannahneal/workspace/C-sharp/ch5-dictionaries/practice-iterating-planets/obj/Debug/netcoreapp2.2/practice-iterating-planets.pdb
